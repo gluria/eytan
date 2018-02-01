@@ -1,0 +1,24 @@
+
+
+<div class="container-fluid">
+
+  <div class="row">
+
+    <div class="image-galary col-md-offset-1 col-md-6">
+
+      <div class="row">
+        <div *ngFor="let image of subProject.subProjectImages" class="imagepin col-md-4">
+          <a (click)="openDialog(image.imgSrc)">
+            <img src="{{image.imgSrc}}" alt="{{image.imgAlt}}">
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="project-description col-md-4">
+      <h1>{{subProject.subProjectHebrewName}}</h1>
+    </div>
+
+  </div><!-- row -->
+
+</div><!-- container-fluid  -->

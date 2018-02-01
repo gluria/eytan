@@ -1,0 +1,41 @@
+<!-- <p>
+  ------------remove this ------------------
+  <br>
+  you choose the {{projectTypeName}} project!
+  <br>
+  {{project.projectHebrewName}}
+  <br>
+  ------------remove this ------------------
+</p> -->
+
+<div class="col-md-offset-3 col-md-6" style="text-align:right;">
+  <h1>{{project.projectHebrewName}}</h1>
+  <!-- <ul>
+    <li *ngFor="let subproject of project.projects">
+      <div class="sub-project">
+        <div class="sub-project-title">
+          <span> {{subproject.subProjectHebrewName}} </span>
+          <span> {{subproject.subProjectLocation}} </span>
+          <span> {{subproject.subProjectYear}} </span>
+          <span> {{subproject.subProjectStatus}} </span>
+        </div>
+      </div>
+    </li>
+  </ul> -->
+
+  <table class="table">
+    <tr>
+      <th>מצב הפרוייקט</th>
+      <th>שנה</th>
+      <th>מיקום</th>
+      <th>שם הפרוייקט</th>
+    </tr>
+
+    <tr *ngFor="let subproject of project.projects" routerLink="/projectview/{{subproject.subProjectName}}">
+      <td>{{subproject.subProjectStatus}}</td>
+      <td>{{subproject.subProjectYear}}</td>
+      <td>{{subproject.subProjectLocation}}</td>
+      <td>{{subproject.subProjectHebrewName}}</td>
+    </tr>
+  </table>
+</div>

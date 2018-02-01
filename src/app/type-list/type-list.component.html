@@ -1,0 +1,28 @@
+<div class="back-image">
+  <ul class='slideshow'>
+    <li>
+      <span>Summer</span>
+    </li>
+    <li>
+      <span>Fall</span>
+    </li>
+    <li>
+      <span>Winter</span>
+    </li>
+    <li>
+      <span>Spring</span>
+    </li>
+</ul>
+
+</div>
+
+<div class="col-md-offset-2 col-md-8">
+  <div *ngFor="let project of projects" class="type-list col-md-4">
+        <button (click)="onSelect(project)"
+                routerLink="/type/{{project.projectName}}"
+                type="button" name="button"
+                class="list-group-item">
+          <h3>{{project.projectHebrewName}}</h3>
+        </button>
+  </div>
+</div>
