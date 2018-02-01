@@ -76,19 +76,19 @@ body {
   animation-delay: 6s;
 }
 
-.slideshow li:nth-child(3) span {
-  background-image: url(../../assets/public/images/rotem/R1.JPG);
+/* .slideshow li:nth-child(3) span {
+  background-image: url(../../assets/public/images/rotem/R1.jpg);
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
   animation-delay: 12s;
 }
 
 .slideshow li:nth-child(4) span {
-  background-image: url(../../assets/public/images/rotem/R2.JPG);
+  background-image: url(../../assets/public/images/rotem/R2.jpg);
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
   animation-delay: 18s;
-}
+} */
 
 @-webkit-keyframes imageAnimation {
   0% {
