@@ -17,6 +17,12 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a routerLink="/about">עלינו</a></li>
           <li><a routerLink="/contact-us">צור קשר</a></li>
+          <li *ngFor="let project of projects">
+            <a routerLink="/type/{{project.projectName}}"
+                (click)="onSelect(project)">
+                {{project.projectHebrewName}}
+            </a>
+          </li>
         </ul>
       </ul>
     </div><!-- /.navbar-collapse -->
