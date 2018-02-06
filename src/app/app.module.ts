@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule }    from '@angular/common/http';
+import { CollapseModule } from 'ngx-bootstrap';
 
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material';
@@ -37,6 +38,7 @@ import { ImageModalComponent } from './image-modal/image-modal.component';
     AppRoutingModule,
     NoopAnimationsModule,
     MatDialogModule,
+    CollapseModule
   ],
   entryComponents: [
     ImageModalComponent

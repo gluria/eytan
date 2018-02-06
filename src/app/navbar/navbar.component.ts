@@ -13,7 +13,8 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   projects = PROJECTS;
-
+  isCollapsed = true;
+  
   onSelect( project:Project ): void {
     //this.selectedProject = project;
     sessionStorage.setItem('projectType', project.projectName);
